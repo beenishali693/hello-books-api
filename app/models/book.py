@@ -14,7 +14,7 @@ from typing import Optional
 from ..db import db
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
-  from .author import Author
+    from .author import Author
 
 class Book(db.Model):
     id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
